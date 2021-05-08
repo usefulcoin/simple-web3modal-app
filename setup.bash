@@ -32,4 +32,4 @@ if $debug ; then sudo npm install --global --only=prod https-localhost ; fi
 sudo npm install --global --only=prod https-localhost > /dev/null 2>&1 && echo [$0] yarned up.
 
 # step 5: copy to S3 bucket
-# aws s3 sync . s3://staging-usefulcoin-com [to host on aws]
+# aws s3 sync . s3://simple-web3modal-app [to host on aws]
