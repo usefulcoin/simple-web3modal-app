@@ -3,7 +3,7 @@
 # script name: setup.bash
 # script author: munair simpson
 # script created: 20210508
-# script purpose: spin up a web3-modal powered webapp
+# script purpose: spin up an EC2 instance to do some development on simple-web3modal-app
 
 # disable/enable debugging.
 debug="false" && echo [$0] set debug mode to "$debug".
@@ -30,6 +30,3 @@ aws configure
 # step 4: https-localhost
 if $debug ; then sudo npm install --global --only=prod https-localhost ; fi
 sudo npm install --global --only=prod https-localhost > /dev/null 2>&1 && echo [$0] yarned up.
-
-# step 5: copy to S3 bucket
-# aws s3 sync . s3://simple-web3modal-app [to host on aws]
