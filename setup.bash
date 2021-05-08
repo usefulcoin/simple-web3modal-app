@@ -27,7 +27,7 @@ yarnversion=$(yarn --version) && echo [$0] verified the installation of yarn ver
 awsversion=$(aws --version) && echo [$0] verified the installation of aws version $awsversion.
 aws configure
 
-step 4: https-localhost
+# step 4: https-localhost
 if $debug ; then sudo npm install --global --only=prod https-localhost ; fi
 sudo npm install --global --only=prod https-localhost > /dev/null 2>&1 && echo [$0] yarned up.
 
